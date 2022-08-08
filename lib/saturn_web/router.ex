@@ -18,6 +18,7 @@ defmodule SaturnWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/loaderio-2454fd3d0f545af03fcc4d4728387881", PageController, :loader
   end
 
   # Other scopes may use custom stacks.
