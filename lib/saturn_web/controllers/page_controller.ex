@@ -7,11 +7,8 @@ defmodule SaturnWeb.PageController do
 
   def loader(conn, _params) do
     conn
-    # disable app.html.eex layout
     |> put_layout(false)
-    # disable root.html.eex layout
     |> put_root_layout(false)
-
-    render("loader.html")
+    |>render("loader.html")
   end
 end
